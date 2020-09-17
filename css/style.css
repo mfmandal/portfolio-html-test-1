@@ -1,0 +1,219 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* global css section */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,span,input,button{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*header section css code here */
+header{
+	width: 100%;
+	background-image: url(../img/banner/banner-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+}
+.nav-link{
+	color: white !important;
+}
+
+.nav-link::before{
+	content: '';
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0%;
+	background: white;
+	transition: 0.5s ease-in-out;
+
+}
+.nav-link:hover::before{
+	width: 100%;
+	transition: 0.5s ease-in-out;
+}
+.navbar-brand{
+	color: white !important;
+	font-size: 32px;
+	font-weight: 600;
+}
+.nav-item{
+	margin-left: 40px;
+	position: relative;
+}
+.navbar{
+	padding: 32px 16px;
+}
+.banner-text h1{
+	color: white;
+	font-weight: 700;
+	font-size: 48px;
+    letter-spacing: 4px;
+}
+.banner-text h4{
+	color: white ;
+	margin-top: 40px;
+    margin-bottom: 140px;
+}
+.banner a i{
+	height: 40px;
+	width: 40px;
+	background: #ffb233;
+	color: white;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 40px;
+}
+.banner{
+	text-align: center;
+	margin: 250px 0;
+}
+
+/* about me section start from here */
+.about-me{
+	width: 100%;
+	padding: 100px 0;
+	background: white;
+	text-align: center;
+}
+.title{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 50px;
+}
+.sub-title{
+	margin: 30px 0;
+	font-weight: 600;
+}
+.desc{
+	padding: 0 100px;
+}
+.social-icon{
+	margin: 60px 0;
+}
+.social-icon ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 30px;
+}
+.social-icon ul li a i{
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	background: #c6c6c5;
+}
+.social-icon ul li a i:hover{
+	background: #ffb233;
+}
+
+.contact-me button{
+	padding: 14px 32px;
+    background: transparent;
+    border: 2px solid #51a351;
+    color: #51a351;
+}
+.contact-me button:hover{
+	background: #ffb233;
+	border: 2px solid #ffb233;
+	color: white;
+}
+
+/* suggest section css */
+.suggest{
+	width: 100%;
+	text-align: center;
+	padding: 100px 0;
+	background-image: url(../img/banner/suggest.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.suggest .title{
+	color: white;
+}
+
+.suggest a i{
+	font-size: 32px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background: #ffb233;
+    border: 5px solid #ffb233;
+    border-radius: 100%;
+    color: white;
+	transition: 0.5s ease-in-out;
+
+}
+.suggest a i:hover{
+	border-color: #7f6438;
+	transition: 0.5s ease-in-out;
+}
+.suggest p{
+	color: white;
+	margin: 30px 0;
+}
+.suggest-item{
+	margin-top: 60px;
+}
+
+/* counter section css */
+.counter-section{
+	width: 100%;
+	padding: 100px 0;
+	background-color: #f3f4ff;
+	text-align: center;
+}
+.counter-section h1{
+	font-size: 52px;
+    font-weight: 700;
+}
+.counter-section .line{
+	height: 3px;
+	width: 50px;
+	background-color: green;
+	margin: 20px auto;
+}
+.counter-section p{
+	font-style: italic;
+}
+
+/* testimonial section css */
+.testimonial{
+	width: 100%;
+	background-image: url(../img/testimonial.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+	text-align: center;
+}
+.message{
+	margin-bottom: 64px;
+}
+.name{
+	font-weight: 700;
+    margin: 40px 0 10px 0;
+}
+.desig{
+
+}
+
+.owl-carousel .owl-item img{
+	width: 80px !important;
+	margin: 0 auto;
+}
+.owl-theme .owl-nav{
+	display: none;
+}
